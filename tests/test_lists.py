@@ -29,3 +29,29 @@ def test_calculate_min():
     numbers = [5, 12, 1]
     result = calculate_min(numbers)
     assert result == 1
+
+
+# calculate the sum of all numbers
+# initialise the sum to zero
+
+def calculate_average(numbers: List[int]) -> float:
+    average = 0
+    sum=0
+    number_of_elements=0
+    for number in numbers:
+        sum=sum+number
+        number_of_elements=number_of_elements+1
+    
+    average=sum/number_of_elements
+    return average
+
+def test_calculate_average():
+    numbers = [2,3,4]
+    result = calculate_average(numbers)
+    assert result == 3
+    numbers = [10,5,2,-1]
+    result = calculate_average(numbers)
+    assert result == 4
+    numbers = [10,5]
+    result = calculate_average(numbers)
+    assert result == 7.5
