@@ -1,0 +1,18 @@
+# Changes here will be overwritten by Copier
+_commit: a9f90ff
+_src_path: .
+copyright_year: '2024'
+documentation: true
+email: my@email.com
+full_name: Tkothih
+github_username: tkothih
+initial_commit: false
+open_source_license: MIT
+package_name: hello_python
+project_name: Hello Python
+project_short_description: This is my Python playground
+project_slug: hello-python
+run_poetry_install: false
+setup_github: false
+setup_pre_commit: false
+
