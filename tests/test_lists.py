@@ -17,3 +17,15 @@ def test_calculate_max():
     numbers = [5, 12, 1, 0]
     biggest = calculate_max(numbers)
     assert biggest == 12
+
+def calculate_min(numbers: List[int]) -> int:
+    smallest = numbers[0]
+    for number in numbers:
+        if smallest > number:
+            smallest=number
+    return smallest
+
+def test_calculate_min():
+    numbers = [5, 12, 1]
+    result = calculate_min(numbers)
+    assert result == 1
